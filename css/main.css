@@ -6725,6 +6725,31 @@ ul {
   margin: 0;
   padding: 0;
 }
+li {
+  list-style-type: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+a {
+  color: inherit;
+}
+a:link,
+a:hover,
+a:visited,
+a:active,
+a:focus {
+  color: inherit;
+}
+textarea:focus,
+input:focus {
+  outline: none;
+}
 .form-group {
   box-shadow: none;
 }
@@ -6826,4 +6851,67 @@ ul {
   background-color: #fecc51;
   border: none;
   color: #4a4a4a;
+}
+.secondary-navigation {
+  background-color: #4a4a4a;
+  padding: 40px 0;
+  color: #FFF;
+}
+.secondary-navigation h2 {
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  font-weight: bold;
+  line-height: 150%;
+}
+.secondary-navigation ul li a {
+  display: block;
+  width: 100%;
+  padding: 5px 0;
+  opacity: .7;
+}
+.secondary-navigation span {
+  display: block;
+  margin: 5px 0;
+}
+.secondary-navigation aside {
+  margin-top: 30px;
+}
+.secondary-navigation aside .social {
+  font-size: 30px;
+  margin-right: 10px;
+  text-decoration: none;
+  opacity: .7;
+  transition: opacity .3s;
+}
+.secondary-navigation aside .social:hover {
+  opacity: 1;
+}
+.secondary-navigation .newsletter > input,
+.secondary-navigation .newsletter > button {
+  height: 35px;
+  border-radius: 17px;
+}
+.secondary-navigation .newsletter > input {
+  width: calc(100% - 109px);
+  border-style: none;
+  padding: 0 15px;
+  color: #4a4a4a;
+}
+.secondary-navigation .newsletter > button {
+  width: 105px;
+  background-color: #4a4a4a;
+  color: #FFF;
+  border: 2px solid #fecc51;
+  text-align: center;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.copyright-footer span {
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  color: #4a4a4a;
+  font-size: 14px;
 }
