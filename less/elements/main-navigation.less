@@ -1,0 +1,83 @@
+
+.main-navigation {
+  background-color: @bg-navigation;
+  max-height: 60px;
+  padding: 10px 0;
+  > nav {
+    > .row{  
+      > .col-md-6 {
+        > ul {
+          > li { 
+            display: inline-block;
+            background-color: @menu-hover;
+            border-radius: @border-radius;
+            
+            > a { 
+              text-transform: uppercase;
+              opacity: 0.7;
+              font-weight: bold;
+              padding: 10px 10px;
+              display: inline-block;
+              color: @menu-color;
+              text-decoration: none;
+              cursor: pointer;
+            }
+            > a:hover {
+              > .fa {
+                color: @color-warning;
+              }
+            }
+          }
+          > .category {
+            position: relative;  
+            border-radius: @border-radius @border-radius 0 0;
+            > a {
+                  padding-bottom: 20px;
+            }          
+            > ul {
+              //height: 400px;
+              position: absolute;              
+              list-style: none;
+              background-color: #FFF;
+              top: 50px;
+              left: -1px;
+              padding-bottom: 10px;
+              border-left: 1px solid #CCC;
+              border-bottom: 1px solid #CCC;
+              > li {
+                width: 200px;
+                border-left: 4px solid #FFF;
+                &:hover {
+                  border-left: 4px solid @color-warning;              
+                }
+                > a {
+                  padding: 10px 10px 0 10px;
+                  display: inline-block;
+                }
+                > .sub {
+                  width: 200px;
+                  height: 100%;
+                  position: absolute;
+                  left: 200px;
+                  top: 0;
+                  background-color: red;
+                }
+              }              
+            }
+          }   
+        }
+      }        
+      > .search {
+        > input {
+          box-shadow: none;
+          border: none;
+        }
+        > .input-group-addon {        
+          background-color: @color-warning;
+          border: none;
+          color: @bg-navigation;
+        }
+      }   
+    }
+  }
+} 

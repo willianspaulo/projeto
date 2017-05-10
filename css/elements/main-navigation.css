@@ -1,0 +1,6 @@
+.main-navigation {
+  background-color: #333;
+}
+.main-navigation > nav > ul > li {
+  display: inline;
+}
