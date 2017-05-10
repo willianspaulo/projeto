@@ -9,28 +9,34 @@
         > ul {
           > li { 
             display: inline-block;
-            background-color: @color-5;
-            border-radius: @border-radius;
+            border-radius: 4px;
             
+            &:hover {
+              background-color: @color-5;
+
+              a {
+                color: @color-1;
+
+                .fa {
+                  color: @color-2;
+                }
+              }
+            }
+
             > a { 
               text-transform: uppercase;
               opacity: 0.7;
               font-weight: bold;
               padding: 10px 10px;
               display: inline-block;
-              color: @navbar-color;
+              color: @color-5;
               text-decoration: none;
               cursor: pointer;
-            }
-            > a:hover {
-              > .fa {
-                color: @color-warning;
-              }
             }
           }
           > .category {
             position: relative;  
-            border-radius: @border-radius @border-radius 0 0;
+            border-radius: 4px 4px 0 0;
             > a {
                   padding-bottom: 20px;
             }          
@@ -38,29 +44,59 @@
               //height: 400px;
               position: absolute;              
               list-style: none;
-              background-color: #FFF;
               top: 50px;
               left: -1px;
-              padding-bottom: 10px;
+              padding: 10px 0;
               border-left: 1px solid #CCC;
               border-bottom: 1px solid #CCC;
               > li {
                 width: 200px;
                 border-left: 4px solid #FFF;
                 &:hover {
-                  border-left: 4px solid @color-warning;              
+                  border-left: 4px solid @color-2;              
                 }
                 > a {
-                  padding: 10px 10px 0 10px;
+                  padding: 5px 10px;
+                  width: 100%;
+                  color: @color-1;
+                  text-decoration: none;
                   display: inline-block;
+
+                  &:hover {
+                    color: #000;
+                  }
                 }
                 > .sub {
                   width: 200px;
                   height: 100%;
                   position: absolute;
                   left: 200px;
-                  top: 0;
-                  background-color: red;
+                  top: 1px;
+                  border-bottom: 1px solid #CCC;
+
+                  ul {
+                      //height: 400px;            
+                      list-style: none;
+                      padding: 10px 0;
+                      > li {
+                        width: 200px;
+                        border-left: 4px solid #FFF;
+                        &:hover {
+                          border-left: 4px solid @color-2;              
+                        }
+                      > a {
+                        padding: 5px 10px;
+                        width: 100%;
+                        color: @color-1;
+                        text-decoration: none;
+                        display: inline-block;
+
+                        &:hover {
+                          color: #000;
+                        }
+                      }
+                    }
+                  }                  
                 }
               }              
             }
@@ -73,11 +109,14 @@
           border: none;
         }
         > .input-group-addon {        
-          background-color: @color-warning;
+          background-color: @color-2;
           border: none;
-          color: @bg-navigation;
+          color: @color-1;
         }
       }   
     }
   }
 } 
+
+
+
