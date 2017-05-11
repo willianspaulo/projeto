@@ -1,7 +1,7 @@
 .secondary-navigation {
-  background-color: @color-1;
+  background-color: @color-darker;
   padding: 40px 0;
-  color: @color-5;
+  color: @color-light; 
 
   h2 {
     font-size: 14px;
@@ -42,20 +42,20 @@
   .newsletter {
     > input,
     > button {
+      .border-radius(17px);
       height: 35px;
-      border-radius: 17px;
     }
     > input {
       width: calc(~"100% - 109px");
       border-style: none;
       padding: 0 15px;
-      color: @color-1;
+      color: @color-darker;
     }
     > button {
       width: 105px;
-      background-color: @color-1;
-      color: @color-5;
-      border: 2px solid @color-2;
+      background-color: @color-darker;
+      color: @color-light;
+      border: 2px solid @color-warning;
       text-align: center;
       font-size: 14px;
       text-transform: uppercase;
