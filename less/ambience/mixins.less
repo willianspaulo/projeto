@@ -9,9 +9,27 @@
   .border-radius(8px);
 }
 
-.button {
-  padding: 7px 20px;
+.button(@bg: @color-sky, @color: @color-lighter) {
+  height: 40px;
+  line-height: 40px;
+  padding: 0 30px;
   text-transform: uppercase;
+  text-align: center;
   font-weight: 100;
-  border-radius: 27px;
+  border-radius: 20px;
+  background-color: @bg;
+  color: @color;
+  transition: background-color .3s;
+
+  &:hover {
+    background-color: mix(#000, @bg, 10%);
+  }
+}
+
+.clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
 }
