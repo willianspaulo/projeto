@@ -1,0 +1,65 @@
+.secondary-navigation {
+  background-color: @color-1;
+  padding: 40px 0;
+  color: @color-5;
+
+  h2 {
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-weight: bold;
+    line-height: 150%;
+  }
+  ul {
+    li {
+      a {
+        display: block;
+        width: 100%;
+        padding: 5px 0;
+        opacity: .7;
+      }
+    }
+  }
+  span {
+    display: block;
+    margin: 5px 0;
+  }
+  aside {
+    margin-top: 30px;
+
+    .social {
+      font-size: 30px;
+      margin-right: 10px;
+      text-decoration: none;
+      opacity: .7;
+      transition: opacity .3s;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+  .newsletter {
+    > input,
+    > button {
+      height: 35px;
+      border-radius: 17px;
+    }
+    > input {
+      width: calc(~"100% - 109px");
+      border-style: none;
+      padding: 0 15px;
+      color: @color-1;
+    }
+    > button {
+      width: 105px;
+      background-color: @color-1;
+      color: @color-5;
+      border: 2px solid @color-2;
+      text-align: center;
+      font-size: 14px;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+  }
+}

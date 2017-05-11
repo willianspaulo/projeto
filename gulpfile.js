@@ -5,12 +5,12 @@ var watch = require('gulp-watch');
 var plumber = require('gulp-plumber');
 
 gulp.task('less', function() {
-  return gulp.src('./less/main.less')
+  return gulp.src('less/main.less')
     .pipe(plumber())
     .pipe(less())
-    .pipe(gulp.dest('./css'))
+    .pipe(gulp.dest('css'))
     .pipe(browserSync.reload({
-      stream : true
+      stream: true
     }));
 });
 
@@ -18,11 +18,13 @@ gulp.task('browser-sync', function() {
   browserSync.init({
     server: {
       baseDir: './'
-    }
+    },
+    browser: 'google-chrome',
+    notify: false
   });
 });
 
 gulp.task('default', ['less', 'browser-sync'], function() {
-  gulp.watch('./less/**/*.less', ['less', browserSync.reload])
-  gulp.watch('index.html', browserSync.reload)
+  gulp.watch('less/**/*.less', ['less', browserSync.reload])
+  gulp.watch('*.html', browserSync.reload)
 });
