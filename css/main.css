@@ -6753,6 +6753,25 @@ input:focus {
 .form-group {
   box-shadow: none;
 }
+.head-site {
+  height: 60px;
+  padding: 10px 0;
+}
+.head-site img {
+  display: inline;
+}
+.head-site .fa {
+  display: inline-block;
+  font-size: 26px;
+  position: relative;
+  top: 5px;
+}
+.head-site .line-vertical {
+  display: inline;
+  padding: 15px 1px;
+  margin: 30px;
+  background-color: #CCC;
+}
 .main-navigation {
   background-color: #333;
   max-height: 60px;
@@ -6788,6 +6807,9 @@ input:focus {
 .main-navigation > nav > .row > .col-md-6 > ul > .category > a {
   padding-bottom: 20px;
 }
+.main-navigation > nav > .row > .col-md-6 > ul > .category:hover ul {
+  display: block;
+}
 .main-navigation > nav > .row > .col-md-6 > ul > .category > ul {
   position: absolute;
   list-style: none;
@@ -6795,7 +6817,9 @@ input:focus {
   left: -1px;
   padding: 10px 0;
   border-left: 1px solid #CCC;
+  border-right: 1px solid #CCC;
   border-bottom: 1px solid #CCC;
+  display: none;
 }
 .main-navigation > nav > .row > .col-md-6 > ul > .category > ul > li {
   width: 200px;
@@ -6804,12 +6828,23 @@ input:focus {
 .main-navigation > nav > .row > .col-md-6 > ul > .category > ul > li:hover {
   border-left: 4px solid #fecc51;
 }
+.main-navigation > nav > .row > .col-md-6 > ul > .category > ul > li:hover .sub {
+  display: block;
+}
+.main-navigation > nav > .row > .col-md-6 > ul > .category > ul > li:hover a > .fa {
+  display: block;
+  color: #4a4a4a;
+  float: right;
+}
 .main-navigation > nav > .row > .col-md-6 > ul > .category > ul > li > a {
   padding: 5px 10px;
   width: 100%;
   color: #4a4a4a;
   text-decoration: none;
   display: inline-block;
+}
+.main-navigation > nav > .row > .col-md-6 > ul > .category > ul > li > a > .fa {
+  display: none;
 }
 .main-navigation > nav > .row > .col-md-6 > ul > .category > ul > li > a:hover {
   color: #000;
@@ -6820,7 +6855,10 @@ input:focus {
   position: absolute;
   left: 200px;
   top: 1px;
+  border-right: 1px solid #CCC;
+  border-left: 1px solid #CCC;
   border-bottom: 1px solid #CCC;
+  display: none;
 }
 .main-navigation > nav > .row > .col-md-6 > ul > .category > ul > li > .sub ul {
   list-style: none;
@@ -6833,12 +6871,34 @@ input:focus {
 .main-navigation > nav > .row > .col-md-6 > ul > .category > ul > li > .sub ul > li:hover {
   border-left: 4px solid #fecc51;
 }
+.main-navigation > nav > .row > .col-md-6 > ul > .category > ul > li > .sub ul > li:hover .sub {
+  display: block;
+}
+.main-navigation > nav > .row > .col-md-6 > ul > .category > ul > li > .sub ul > li:hover > a > .fa {
+  display: inline;
+}
+.main-navigation > nav > .row > .col-md-6 > ul > .category > ul > li > .sub ul > li > .sub {
+  width: 200px;
+  height: 100%;
+  position: absolute;
+  left: 199px;
+  top: 1px;
+  border-bottom: 1px solid #CCC;
+  border-right: 1px solid #CCC;
+  display: none;
+}
+.main-navigation > nav > .row > .col-md-6 > ul > .category > ul > li > .sub ul > li > .sub > ul > li {
+  border-right: 0;
+}
 .main-navigation > nav > .row > .col-md-6 > ul > .category > ul > li > .sub ul > li > a {
   padding: 5px 10px;
   width: 100%;
   color: #4a4a4a;
   text-decoration: none;
   display: inline-block;
+}
+.main-navigation > nav > .row > .col-md-6 > ul > .category > ul > li > .sub ul > li > a > .fa {
+  display: none;
 }
 .main-navigation > nav > .row > .col-md-6 > ul > .category > ul > li > .sub ul > li > a:hover {
   color: #000;
