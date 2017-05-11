@@ -18,9 +18,9 @@ gulp.task('browser-sync', function() {
   browserSync.init({
     server: {
       baseDir: './'
-    },
-    browser: 'google-chrome',
-    notify: false
+    }//,
+    //browser: 'google-chrome',
+    //notify: true
   });
 });
 
