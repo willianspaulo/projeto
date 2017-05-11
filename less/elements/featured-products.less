@@ -13,25 +13,70 @@
       background-repeat: no-repeat;
       background-size: cover;
 
-      > .icon-liked {
-        font-size: 24px;
-        position: absolute;
-        top: 20px;
-        right: 20px;
+      > a {
+        > .icon-liked {
+          font-size: 24px;
+          position: absolute;
+          top: 20px;
+          right: 20px;
 
-        &.line {
-          color: #fff;
-          z-index: 1;
+          &.line {
+            color: #fff;
+            z-index: 1;
+          }
+          &.fill {
+            color: rgba(255, 255, 255, .3);
+          }
         }
-        &.fill {
-          color: rgba(255, 255, 255, .3);
+
+        &.liked {
+          > .icon-liked.fill {
+            color: #d14037;
+          }
         }
       }
     }
-    &.liked {
-      .image {
-        > .icon-liked.fill {
-          color: #d14037;
+    > .content {
+      margin: 10px;
+
+      > .details {
+        > .info {
+          display: inline-block;
+
+          > h2 {
+            font-size: 22px;
+            font-weight: bold;
+            line-height: 1.45;
+            // color
+          }
+          > span {
+            font-size: 14px;
+            letter-spacing: .3px;
+            color: #000;
+          }
+        }
+        > .add {
+          float: right;
+          background-color: blue;
+        }
+      }
+      > .more {
+        > span {
+          font-size: 14px;
+          letter-spacing: .3px;
+          color: #000;
+
+          > a {
+            font-style: italic;
+            text-decoration: underline;
+            // color
+          }
+          &.price {
+            font-size: 28px;
+            // color
+            font-weight: bold;
+            float: right;
+          }
         }
       }
     }
