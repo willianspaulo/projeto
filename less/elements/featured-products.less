@@ -56,11 +56,20 @@
           }
         }
         > .add {
+          .button;
           float: right;
-          background-color: blue;
+
+          > .icon {
+            font-size: 20px;
+            margin-right: 5px;
+          }
         }
       }
       > .more {
+        .clearfix;
+        position: relative;
+        margin-top: 20px;
+
         > span {
           font-size: 14px;
           letter-spacing: .3px;
@@ -69,13 +78,20 @@
           > a {
             font-style: italic;
             text-decoration: underline;
-            // color
+            color: @color-sky;
           }
           &.price {
             font-size: 28px;
-            // color
+            color: @color-sky;
             font-weight: bold;
-            float: right;
+            line-height: 1;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+
+            > small {
+              font-size: 14px;
+            }
           }
         }
       }
