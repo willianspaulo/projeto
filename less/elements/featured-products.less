@@ -1,0 +1,39 @@
+.featured-products {
+  background-color: #f3f3f3;
+  
+  .product {
+    margin: 15px 0;
+
+    .image {
+      width: 100%;
+      height: 186px;
+      background-color: grey;
+      position: relative;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      > .icon-liked {
+        font-size: 24px;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+
+        &.line {
+          color: #fff;
+          z-index: 1;
+        }
+        &.fill {
+          color: rgba(255, 255, 255, .3);
+        }
+      }
+    }
+    &.liked {
+      .image {
+        > .icon-liked.fill {
+          color: #d14037;
+        }
+      }
+    }
+  }
+}

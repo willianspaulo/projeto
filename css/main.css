@@ -6975,3 +6975,34 @@ input:focus {
   color: #4a4a4a;
   font-size: 14px;
 }
+.featured-products {
+  background-color: #f3f3f3;
+}
+.featured-products .product {
+  margin: 15px 0;
+}
+.featured-products .product .image {
+  width: 100%;
+  height: 186px;
+  background-color: grey;
+  position: relative;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.featured-products .product .image > .icon-liked {
+  font-size: 24px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+.featured-products .product .image > .icon-liked.line {
+  color: #fff;
+  z-index: 1;
+}
+.featured-products .product .image > .icon-liked.fill {
+  color: rgba(255, 255, 255, 0.3);
+}
+.featured-products .product.liked .image > .icon-liked.fill {
+  color: #d14037;
+}
