@@ -1071,7 +1071,7 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: AlegreyaSans, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.42857143;
   color: #4a4a4a;
@@ -5960,7 +5960,7 @@ button.close {
   position: absolute;
   z-index: 1070;
   display: block;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: AlegreyaSans, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -6078,7 +6078,7 @@ button.close {
   display: none;
   max-width: 276px;
   padding: 1px;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: AlegreyaSans, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -6774,10 +6774,26 @@ h4 {
   font-family: AlegreyaSans;
   font-size: 24px;
   font-weight: 500;
-  padding-bottom: 30px;
+}
+b {
+  font-weight: bold;
+}
+i {
+  font-style: italic;
+  font-family: Alegreya;
+  font-weight: bolder;
 }
 .mt-lg {
   margin-top: 60px;
+}
+.mb-lg {
+  margin-bottom: 60px;
+}
+.pb-md {
+  padding-bottom: 30px;
+}
+.pb-sm {
+  padding-bottom: 15px;
 }
 .text-danger {
   color: #d14037;
@@ -6787,6 +6803,9 @@ h4 {
 }
 .text-success {
   color: #54b176;
+}
+.text-dusk {
+  color: #f5be39;
 }
 hr {
   border-top: 2px solid #eeeeee;
@@ -6815,6 +6834,48 @@ hr {
   border: solid 1px #dddddd;
   border-radius: 8px;
   height: auto;
+}
+.checkbox input[type=checkbox] {
+  opacity: 0;
+}
+.checkbox label {
+  padding-left: 0;
+  font-family: AlegreyaSans;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: left;
+}
+.checkbox label::before {
+  content: '';
+  position: relative;
+  top: 5px;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  margin-right: 10px;
+  border: 1px solid #f5be39;
+  background-color: #FFF;
+  border-radius: 3px;
+}
+.checkbox label::after {
+  color: #FFF;
+  display: inline-block;
+  font-size: 11px;
+  height: 16px;
+  left: 22px;
+  margin-left: -20px;
+  padding-left: 3px;
+  padding-top: 1px;
+  position: absolute;
+  top: 7px;
+  width: 16px;
+}
+.checkbox input[type=checkbox]:checked + label::before {
+  background-color: #f5be39;
+}
+.checkbox input[type="checkbox"]:checked + label::after {
+  content: "\f00c";
+  font-family: 'FontAwesome';
 }
 .btn-dark {
   height: 40px;
