@@ -7360,3 +7360,12 @@ input:focus {
   padding-right: 30px;
   padding-left: 30px;
 }
+.wizard-line {
+  background-color: #abeafe;
+  display: table;
+  width: 100%;
+}
+.wizard-line li {
+  display: table-cell;
+  text-align: center;
+}
