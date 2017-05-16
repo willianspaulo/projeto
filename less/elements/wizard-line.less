@@ -1,10 +1,72 @@
 .wizard-line {
-  background-color: #abeafe;
   display: table;
   width: 100%;
+  border-top: 2px solid  @color-light;
+  margin-top: 30px;
+  margin-bottom: 30px;
 
-    li {
-      display: table-cell;
-      text-align: center;
+  li {
+    display: table-cell;
+    padding-top: 20px;
+    text-align: center;
+    text-align: center;
+    position: relative;
+
+    &::after {
+      content: '';
+      display: inline-block;
+      position: absolute;
+      top: -11px;
+      left: 50%;
+      left: calc(50%-5px);
+      width: 20px;
+      height: 20px;
+      border: 2px solid @color-light;
+      border-radius: 25px;
+      background-color: @color-lighter;
     }
+  }
+  li.active::before {
+    font: 25px FontAwesome;
+    content: '\f105';
+    display: inline-block;
+    position: absolute;
+    top: -16px;
+    left: 50%;
+    left: calc(50%-7px);
+    padding-left: 2px;
+    padding-top: 0px;
+    width: 30px;
+    height: 30px;
+    border: 2px solid @color-sky;
+    color: @color-sky;
+    border-radius: 25px;
+    z-index: 2;
+    background-color:  @color-lighter;
+  }
+  li.visited::before {
+    font: 14px FontAwesome;
+    content: '\f00c';
+    display: inline-block;
+    position: absolute;
+    top: -16px;
+    left: 50%;
+    left: calc(50%-7px);
+    padding-top: 6px;
+    width: 30px;
+    height: 30px;
+    border: 2px solid @color-success;
+    color: @color-success;
+    border-radius: 25px;
+    z-index: 2;
+    background-color:  @color-lighter;
+  }
+}
+
+.wizard-line-4 li{ 
+  width: 25%;
+}
+
+.wizard-line-3 li{ 
+  width: 33.3333333333333333%;
 }

@@ -1,5 +1,19 @@
 .btn-dark {
-  .button;
+  .button(@bg: @color-darker, @color: @color-lighter);
   background-color: @color-dark;
-  color: @color-lighter;
-} 
+  
+  &:active,
+  &:focus,
+  &:hover {
+    color: @color-lighter;
+    outline: none;
+  } 
+}
+
+.btn-warning {
+  .button(@bg: @color-warning, @color: @color-darker);
+}
+
+.btn-rounded {
+  background-color: #FFF;
+}

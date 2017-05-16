@@ -282,7 +282,38 @@
 
 
 
-
+<div class="slideHome">
+  <div>
+    <img src="img/vinho_01.jpg">
+    <div class="cont">
+      <h3>
+        Entre para o <br/> Clube Expotchê e receba todo mês o sul do país na sua casa<br>
+        <span>O primeiro clube de assinatura com produtos tri-legais.</span>
+      </h3>
+      <button class="btn btn-warning">Conheça os kits</button>
+    </div>  
+  </div>
+  <div>
+    <img src="img/vinho_02.jpg">
+    <div class="cont">
+      <h3>
+        Entre para o <br/> Clube Expotchê e receba todo mês o sul do país na sua casa
+        <small>O primeiro clube de assinatura com produtos tri-legais.</small>
+      </h3>
+      <button class="btn btn-warning">Conheça os kits</button>
+    </div>  
+  </div>
+  <div>
+    <img src="img/vinho_03.jpg">
+    <div class="cont">
+      <h3>
+        Entre para o <br/> Clube Expotchê e receba todo mês o sul do país na sua casa
+        <small>O primeiro clube de assinatura com produtos tri-legais.</small>
+      </h3>
+      <button class="btn btn-warning">Conheça os kits</button>
+    </div>  
+  </div>
+</div>
 
 
 
@@ -546,10 +577,17 @@
     <span>&copy; Expotchê. Todos os direitos reservados.</span>
   </div>
 
-  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
   <script src="bower_components/jquery/dist/jquery.min.js"></script>
-  <!-- Include all compiled plugins (below), or include individual files as needed -->
   <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="js/slick.js"></script>
+  <script>
+    $('.slideHome').slick({
+      autoplay: false,
+      autoplaySpeed: 2000,
+      arrows: false,
+      dots: true
+    });
+  </script>
 </body>
 
 </html>
