@@ -4,8 +4,8 @@
 
 .formulary {
   height: 40px;
-  background-color: #ffffff;
-  border: solid 1px #dddddd;
+  background-color: @color-lighter;
+  border: solid 1px @color-light;
   .border-radius(8px);
 }
 
@@ -21,9 +21,18 @@
   background-color: @bg;
   color: @color;
   transition: background-color .3s;
+  border: 2px solid @bg;
+  outline: none;
+  box-shadow: none;
 
   &:hover {
     background-color: mix(#000, @bg, 10%);
+    border-color: mix(#000, @bg, 10%);
+  }
+
+  &:active,
+  &:focus {
+    outline: none;
   }
 }
 
