@@ -12,6 +12,7 @@
     "bower": "^1.8.0",
     "browser-sync": "^2.18.8",
     "gulp": "^3.9.1",
+    "gulp-install": "^1.1.0",
     "gulp-less": "^3.3.0",
     "gulp-plumber": "^1.1.0",
     "gulp-watch": "^4.3.11"
