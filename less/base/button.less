@@ -1,7 +1,4 @@
-.btn-dark {
-  .button(@bg: @color-darker, @color: @color-lighter);
-  background-color: @color-dark;
-  
+.btn {
   &:active,
   &:focus,
   &:hover {
@@ -10,10 +7,20 @@
   } 
 }
 
+.btn-dark {
+  .button(@bg: @color-darker, @color: @color-lighter);
+  background-color: @color-dark;
+}
+
 .btn-warning {
   .button(@bg: @color-warning, @color: @color-darker);
 }
 
+.btn-success {
+  .button(@bg: @color-success, @color: @color-lighter);
+}
+
 .btn-rounded {
   background-color: #FFF;
+  color: @color-darker;
 }

@@ -1071,7 +1071,7 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 body {
-  font-family: AlegreyaSans, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.42857143;
   color: #4a4a4a;
@@ -5960,7 +5960,7 @@ button.close {
   position: absolute;
   z-index: 1070;
   display: block;
-  font-family: AlegreyaSans, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -6078,7 +6078,7 @@ button.close {
   display: none;
   max-width: 276px;
   padding: 1px;
-  font-family: AlegreyaSans, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -6786,8 +6786,14 @@ i {
 .mt-lg {
   margin-top: 60px;
 }
+.mt-md {
+  margin-top: 28px;
+}
 .mb-lg {
   margin-bottom: 60px;
+}
+.mb-0 {
+  margin-bottom: 0;
 }
 .pb-md {
   padding-bottom: 30px;
@@ -6815,6 +6821,12 @@ hr {
 }
 .pointer {
   cursor: pointer;
+}
+.bg-light {
+  background-color: #bfc3cf;
+}
+.text-lg {
+  font-size: 34px;
 }
 .form-group label {
   font-family: AlegreyaSans;
@@ -6892,6 +6904,12 @@ hr {
 .checkbox-inline label::after {
   left: 41px;
 }
+.btn:active,
+.btn:focus,
+.btn:hover {
+  color: #FFF;
+  outline: none;
+}
 .btn-dark {
   display: inline-block;
   height: 40px;
@@ -6915,12 +6933,6 @@ hr {
 }
 .btn-dark:active,
 .btn-dark:focus {
-  outline: none;
-}
-.btn-dark:active,
-.btn-dark:focus,
-.btn-dark:hover {
-  color: #FFF;
   outline: none;
 }
 .btn-warning {
@@ -6947,8 +6959,33 @@ hr {
 .btn-warning:focus {
   outline: none;
 }
+.btn-success {
+  display: inline-block;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 30px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 100;
+  border-radius: 20px;
+  background-color: #54b176;
+  color: #FFF;
+  transition: background-color 0.3s;
+  border: 2px solid #54b176;
+  outline: none;
+  box-shadow: none;
+}
+.btn-success:hover {
+  background-color: #4c9f6a;
+  border-color: #4c9f6a;
+}
+.btn-success:active,
+.btn-success:focus {
+  outline: none;
+}
 .btn-rounded {
   background-color: #FFF;
+  color: #333;
 }
 ul {
   margin: 0;
